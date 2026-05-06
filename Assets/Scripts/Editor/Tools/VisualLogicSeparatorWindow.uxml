@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="root" class="window-root">
+        <ui:Label name="title-label" text="Separate Visual from Logic" class="window-title" />
+        <ui:Label
+            name="description-label"
+            text="Add scene objects with MeshRenderer or MeshFilter, then click Process."
+            class="window-description" />
+
+        <ui:VisualElement name="controls-row" class="controls-row">
+            <ui:Button name="add-selected-button" text="Add Selected" class="control-button" />
+            <ui:Button name="add-slot-button" text="Add Empty Slot" class="control-button" />
+            <ui:Button name="clear-button" text="Clear" class="control-button" />
+        </ui:VisualElement>
+
+        <ui:ScrollView name="targets-container" class="targets-container" />
+
+        <ui:Label name="status-label" class="status-label" />
+
+        <ui:Button name="process-button" text="Process" class="process-button" />
+    </ui:VisualElement>
+</ui:UXML>

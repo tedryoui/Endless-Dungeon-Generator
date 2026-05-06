@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Room Prefabs
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Room Prefabs
+  m_GUID: 24a505c5745116649a0e776a3d25c4ba
+  m_SerializeEntries:
+  - m_GUID: 5fecfa7cad9462947b10e566155bfc7f
+    m_Address: Assets/Prefabs/Room Prefabs/Default Room 2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e238bb9b2a8b94448305a42046250a4
+    m_Address: Assets/Prefabs/Room Prefabs/Default Room 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85f19b10f723f74469d0183892b401e4
+    m_Address: Assets/Prefabs/Room Prefabs/Entrance Room 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 367ad26aedae25b4c954abb656b55a44, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4e208751841252e449d9be1e886e4f54, type: 2}
+    - {fileID: 11400000, guid: 58f902136c5e97d44aa8d9666c6ef904, type: 2}

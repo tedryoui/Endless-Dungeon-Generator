@@ -1,0 +1,45 @@
+.window-root {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    flex-grow: 1;
+}
+
+.window-title {
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+}
+
+.window-description {
+    white-space: normal;
+    margin-bottom: 8px;
+}
+
+.controls-row {
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.control-button {
+    margin-right: 6px;
+}
+
+.targets-container {
+    flex-grow: 1;
+    min-height: 140px;
+}
+
+.empty-list-label {
+    color: rgb(150, 150, 150);
+}
+
+.status-label {
+    white-space: normal;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.process-button {
+    height: 28px;
+}
