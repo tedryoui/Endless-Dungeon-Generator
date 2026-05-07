@@ -68,15 +68,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eecc717fa3146e28259bf75413f50e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.Room
+  _areaCollider: {fileID: 0}
   _roomBounds:
-    Width: 5
-    Depth: 4
+    CenterIndex:
+      x: 17
+      y: 0
+      z: 5
+    Width: 6
+    Height: 1
+    Depth: 5
     Min:
-      x: -3
-      y: -2
+      x: 14
+      y: -1
+      z: 3
     Max:
-      x: 2
-      y: 2
+      x: 19
+      y: -1
+      z: 7
+  _roomInfo:
+    HasEnter: 0
+    ExitCount: 0
+    Enter:
+      x: 0
+      y: 0
+      z: 0
+    EnterDirection: 0
+    Exits: []
+    ExitDirections: 
 --- !u!1 &1083186497460053455
 GameObject:
   m_ObjectHideFlags: 0

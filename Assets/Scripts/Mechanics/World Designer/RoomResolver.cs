@@ -30,30 +30,32 @@ namespace Mechanics.World_Designer
             if (_room == null)
                 return;
 
-            var trs  = float4x4.TRS(float3.zero, _room.transform.localRotation, Vector3.one);
-            var grid = Grid.Create(new float3(1), Grid.GridMode.World); 
+            var grid = Grid.Default; 
 
             CollectChildrenData();
-            var roomMatrix = BuildRoomMatrix(trs, grid, out var bounds);
+            var roomMatrix = BuildRoomMatrix(grid, out var bounds);
             _room.Bounds = BuildRoomBounds(bounds, grid);
-            _room.Info   = BuildRoomInfo(roomMatrix, trs, grid);
+            _room.Info   = BuildRoomInfo(roomMatrix, grid);
         }
 
-        private HashSet<int3> BuildRoomMatrix(float4x4 trs, Grid grid, out (int minX, int minY, int minZ, int maxX, int maxY, int maxZ) bounds)
+        private HashSet<int3> BuildRoomMatrix(Grid grid, out (int minX, int minY, int minZ, int maxX, int maxY, int maxZ) bounds)
         {
             var roomMatrix = new HashSet<int3>();
             bounds = (int.MaxValue, int.MaxValue, int.MaxValue, int.MinValue, int.MinValue, int.MinValue);
 
             foreach (var tile in _tiles)
             {
-                var tileGridIndex = ToLocalGridIndex(tile, trs, grid);
+                var tileGridIndex = grid.ToGrid(tile.position);
 
-                bounds.minX = math.min(bounds.minX, tileGridIndex.x);
-                bounds.maxX = math.max(bounds.maxX, tileGridIndex.x);
-                bounds.minY = math.min(bounds.minY, tileGridIndex.y);
-                bounds.maxY = math.max(bounds.maxY, tileGridIndex.y);
-                bounds.minZ = math.min(bounds.minZ, tileGridIndex.z);
-                bounds.maxZ = math.max(bounds.maxZ, tileGridIndex.z);
+                if (tile.gameObject.activeInHierarchy)
+                {
+                    bounds.minX = math.min(bounds.minX, tileGridIndex.x);
+                    bounds.maxX = math.max(bounds.maxX, tileGridIndex.x);
+                    bounds.minY = math.min(bounds.minY, tileGridIndex.y);
+                    bounds.maxY = math.max(bounds.maxY, tileGridIndex.y);
+                    bounds.minZ = math.min(bounds.minZ, tileGridIndex.z);
+                    bounds.maxZ = math.max(bounds.maxZ, tileGridIndex.z);
+                }
 
                 roomMatrix.Add(tileGridIndex);
             }
@@ -63,8 +65,9 @@ namespace Mechanics.World_Designer
 
         private Room.RoomBounds BuildRoomBounds((int minX, int minY, int minZ, int maxX, int maxY, int maxZ) bounds, Grid grid)
         {
-            float3 worldMax = grid.ToWorld(new int3(bounds.maxX, bounds.maxY, bounds.maxZ));
-            float3 worldMin = grid.ToWorld(new int3(bounds.minX, bounds.minY, bounds.minZ));
+            int3   centerIndex = grid.ToGrid(_room.transform.position);
+            float3 worldMax    = grid.ToWorld(new int3(bounds.maxX, bounds.maxY, bounds.maxZ));
+            float3 worldMin    = grid.ToWorld(new int3(bounds.minX, bounds.minY, bounds.minZ));
 
             var boundsWidth  = worldMax.x - worldMin.x + 1;
             var boundsHeight = worldMax.y - worldMin.y + 1;
@@ -72,8 +75,7 @@ namespace Mechanics.World_Designer
 
             return new Room.RoomBounds
             {
-                Center      = _room.transform.localPosition,
-                SceneCenter = _room.transform.GetSceneCenter(),
+                CenterIndex = centerIndex,
                 Width       = boundsWidth,
                 Height      = boundsHeight,
                 Depth       = boundsDepth,
@@ -82,7 +84,7 @@ namespace Mechanics.World_Designer
             };
         }
 
-        private Room.RoomInfo BuildRoomInfo(HashSet<int3> roomMatrix, float4x4 trs, Grid grid)
+        private Room.RoomInfo BuildRoomInfo(HashSet<int3> roomMatrix, Grid grid)
         {
             var hasEnter       = _enter != null;
             var enterGridIndex = new int3();
@@ -90,7 +92,7 @@ namespace Mechanics.World_Designer
 
             if (hasEnter)
             {
-                enterGridIndex = ToLocalGridIndex(_enter.transform, trs, grid);
+                enterGridIndex = grid.ToGrid(_enter.transform.position);
                 enterDirection = ResolveDirection(roomMatrix, enterGridIndex);
             }
 
@@ -98,13 +100,13 @@ namespace Mechanics.World_Designer
             for (var i = 0; i < _exits.Count; i++)
             {
                 var exit               = _exits[i];
-                var tileLocalGridIndex = ToLocalGridIndex(exit.transform, trs, grid);
+                var tileLocalGridIndex = grid.ToGrid(exit.transform.position);
                 exitDirections[i] = ResolveDirection(roomMatrix, tileLocalGridIndex);
             }
 
             var exitCount = _exits.Count(x => x != null);
             var exitGridIndices = exitCount > 0
-                ? _exits.Select(x => ToLocalGridIndex(x.transform, trs, grid)).ToArray()
+                ? _exits.Select(x => grid.ToGrid(x.transform.position)).ToArray()
                 : Array.Empty<int3>();
 
             return new Room.RoomInfo
@@ -115,6 +117,7 @@ namespace Mechanics.World_Designer
                 EnterDirection = enterDirection,
                 Exits          = exitGridIndices,
                 ExitDirections = exitDirections,
+                Tiles          = roomMatrix.ToArray()
             };
         }
 
@@ -124,7 +127,7 @@ namespace Mechanics.World_Designer
             _exits.Clear();
             _enter = null;
 
-            foreach (Transform child in _room.transform.GetChildren())
+            foreach (Transform child in _room.transform.GetChildren(1))
             {
                 if (child.CompareTag(TileTag))
                     _tiles.Add(child);

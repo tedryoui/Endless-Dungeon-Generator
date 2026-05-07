@@ -17,11 +17,18 @@ namespace Mechanics.World_Designer
             [SerializeField, DisabledProperty] private int3   _enterGridIndex;
             [SerializeField, DisabledProperty] private int3[] _pathGridIndices;
 
-            public RoomTunnel(int3 exitGridIndex, int3 enterGridIndex, int3[] pathGridIndices)
+            [SerializeField, DisabledProperty] private Tunnel _tunnel;
+
+            public     int3 ExitGridIndex => _exitGridIndex;
+            public     int3 EnterGridIndex => _enterGridIndex;
+            public     int3[] PathGridIndices => _pathGridIndices;
+            
+            public RoomTunnel(int3 exitGridIndex, int3 enterGridIndex, int3[] pathGridIndices, Tunnel tunnel)
             {
                 _exitGridIndex   = exitGridIndex;
                 _enterGridIndex  = enterGridIndex;
                 _pathGridIndices = pathGridIndices;
+                _tunnel          = tunnel;
             }
         }
 

@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 2457966404972498303}
   - component: {fileID: 2713403727559587773}
   m_Layer: 0
-  m_Name: Cube (5)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 3855508782216557888}
   - component: {fileID: 1553469710237483467}
   m_Layer: 0
-  m_Name: Cube (31)_Logic
+  m_Name: Tile Exit
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,6 +211,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
+  Start: {fileID: 0}
+  Closed: {fileID: 0}
+  Open: {fileID: 0}
 --- !u!1 &395901034992996860
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +495,7 @@ GameObject:
   - component: {fileID: 4460095780097654725}
   - component: {fileID: 7991256281145609906}
   m_Layer: 0
-  m_Name: Cube (2)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -726,7 +729,7 @@ GameObject:
   - component: {fileID: 8085425941189696332}
   - component: {fileID: 7093534923899864691}
   m_Layer: 0
-  m_Name: Cube (18)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -780,7 +783,7 @@ GameObject:
   - component: {fileID: 88775330382956079}
   - component: {fileID: 4314853742825926519}
   m_Layer: 0
-  m_Name: Cube (29)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,7 +837,7 @@ GameObject:
   - component: {fileID: 8661296969895420193}
   - component: {fileID: 5692905086016242029}
   m_Layer: 0
-  m_Name: Cube (6)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,7 +891,7 @@ GameObject:
   - component: {fileID: 7140394177036539839}
   - component: {fileID: 8249055794776946534}
   m_Layer: 0
-  m_Name: Cube (4)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -942,7 +945,7 @@ GameObject:
   - component: {fileID: 7057869194059606303}
   - component: {fileID: 2188999850784495589}
   m_Layer: 0
-  m_Name: Cube (20)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -996,7 +999,7 @@ GameObject:
   - component: {fileID: 1105153179359691417}
   - component: {fileID: 6449239467474738277}
   m_Layer: 0
-  m_Name: Cube (10)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1050,7 +1053,7 @@ GameObject:
   - component: {fileID: 6285204787044418565}
   - component: {fileID: 3694223196151105713}
   m_Layer: 0
-  m_Name: Cube (12)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,7 +1287,7 @@ GameObject:
   - component: {fileID: 8653108403381091089}
   - component: {fileID: 2885360915466596529}
   m_Layer: 0
-  m_Name: Cube (7)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1428,7 +1431,7 @@ GameObject:
   - component: {fileID: 928302616943293323}
   - component: {fileID: 3292240692555860056}
   m_Layer: 0
-  m_Name: Cube (24)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1482,7 +1485,7 @@ GameObject:
   - component: {fileID: 5377388748211458405}
   - component: {fileID: 4598555751886856402}
   m_Layer: 0
-  m_Name: Cube (26)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1537,7 +1540,7 @@ GameObject:
   - component: {fileID: 6610067493943121379}
   - component: {fileID: 5312981803768267562}
   m_Layer: 0
-  m_Name: Cube (17)_Logic
+  m_Name: Tile Exit
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1592,6 +1595,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
+  Start: {fileID: 0}
+  Closed: {fileID: 0}
+  Open: {fileID: 0}
 --- !u!1 &2375736045500493823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,7 +1879,7 @@ GameObject:
   - component: {fileID: 3479882491371925485}
   - component: {fileID: 6877299063427264696}
   m_Layer: 0
-  m_Name: Cube (13)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1927,7 +1933,7 @@ GameObject:
   - component: {fileID: 5351554338239701007}
   - component: {fileID: 7129012157748843490}
   m_Layer: 0
-  m_Name: Cube (27)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1981,7 +1987,7 @@ GameObject:
   - component: {fileID: 7478944372782353736}
   - component: {fileID: 2557451356769968889}
   m_Layer: 0
-  m_Name: Cube (16)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2035,7 +2041,7 @@ GameObject:
   - component: {fileID: 1884521731793623590}
   - component: {fileID: 160457591276415983}
   m_Layer: 0
-  m_Name: Cube (22)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2269,7 +2275,7 @@ GameObject:
   - component: {fileID: 2091893785169806755}
   - component: {fileID: 8490018083628074400}
   m_Layer: 0
-  m_Name: Cube (23)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2323,7 +2329,7 @@ GameObject:
   - component: {fileID: 8036449798024067610}
   - component: {fileID: 8859006801045848836}
   m_Layer: 0
-  m_Name: Cube (05)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2467,7 +2473,7 @@ GameObject:
   - component: {fileID: 2766400864666283450}
   - component: {fileID: 2580368228545060072}
   m_Layer: 0
-  m_Name: Cube (30)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2881,7 +2887,7 @@ GameObject:
   - component: {fileID: 6873957818365205377}
   - component: {fileID: 4380521706353407648}
   m_Layer: 0
-  m_Name: Cube (9)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2935,7 +2941,7 @@ GameObject:
   - component: {fileID: 1114667869896852871}
   - component: {fileID: 3467106136056460687}
   m_Layer: 0
-  m_Name: Cube (1)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2989,7 +2995,7 @@ GameObject:
   - component: {fileID: 5380278830053867237}
   - component: {fileID: 3802010393224005421}
   m_Layer: 0
-  m_Name: Cube (8)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3313,7 +3319,7 @@ GameObject:
   - component: {fileID: 4773613649273466378}
   - component: {fileID: 6486930394295427603}
   m_Layer: 0
-  m_Name: Cube (25)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3457,7 +3463,7 @@ GameObject:
   - component: {fileID: 5917724744473272967}
   - component: {fileID: 7248315773904396573}
   m_Layer: 0
-  m_Name: Cube (3)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3510,6 +3516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7887888040105738891}
   - component: {fileID: 33089911019637933}
+  - component: {fileID: 2530287172609567641}
+  - component: {fileID: 796262624133188636}
   m_Layer: 0
   m_Name: Default Room 2
   m_TagString: Room
@@ -3577,43 +3585,182 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eecc717fa3146e28259bf75413f50e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.Room
-  _areaCollider: {fileID: 0}
+  _boundsCollider: {fileID: 2530287172609567641}
+  _areaCollider: {fileID: 796262624133188636}
   _roomBounds:
-    Center:
-      x: 0
+    CenterIndex:
+      x: -1
       y: 0
-      z: 0
-    SceneCenter:
-      x: 0.5
-      y: 0
-      z: 0
+      z: -1
     Width: 6
     Height: 1
     Depth: 9
     Min:
-      x: -2
+      x: -3
       y: 0
-      z: -4
+      z: -5
     Max:
-      x: 3
+      x: 2
       y: 0
-      z: 4
+      z: 3
   _roomInfo:
     HasEnter: 1
     ExitCount: 2
     Enter:
-      x: 0
+      x: -2
+      y: 0
+      z: 3
+    EnterDirection: 0
+    Exits:
+    - x: -3
+      y: 0
+      z: -4
+    - x: -3
+      y: 0
+      z: -1
+    ExitDirections: 0200000002000000
+    Tiles:
+    - x: 0
+      y: 0
+      z: -2
+    - x: 0
+      y: 0
+      z: -1
+    - x: -1
+      y: 0
+      z: -3
+    - x: -1
       y: 0
       z: 2
-    EnterDirection: 3
-    Exits:
+    - x: -1
+      y: 0
+      z: -2
+    - x: -1
+      y: 0
+      z: 3
+    - x: -1
+      y: 0
+      z: -4
+    - x: -1
+      y: 0
+      z: 1
+    - x: -1
+      y: 0
+      z: -1
+    - x: -1
+      y: 0
+      z: -5
+    - x: -1
+      y: 0
+      z: 0
+    - x: 1
+      y: 0
+      z: -2
+    - x: 1
+      y: 0
+      z: -1
+    - x: 2
+      y: 0
+      z: -2
+    - x: 2
+      y: 0
+      z: -1
     - x: -2
       y: 0
       z: -3
     - x: -2
       y: 0
+      z: 2
+    - x: -2
+      y: 0
+      z: -2
+    - x: -2
+      y: 0
+      z: 3
+    - x: -2
+      y: 0
+      z: -4
+    - x: -2
+      y: 0
+      z: 1
+    - x: -2
+      y: 0
+      z: -1
+    - x: -2
+      y: 0
+      z: -5
+    - x: -2
+      y: 0
       z: 0
-    ExitDirections: 0200000002000000
+    - x: -3
+      y: 0
+      z: -3
+    - x: -3
+      y: 0
+      z: 2
+    - x: -3
+      y: 0
+      z: -2
+    - x: -3
+      y: 0
+      z: 3
+    - x: -3
+      y: 0
+      z: -4
+    - x: -3
+      y: 0
+      z: 1
+    - x: -3
+      y: 0
+      z: -5
+    - x: -3
+      y: 0
+      z: 0
+    - x: -3
+      y: 0
+      z: -1
+--- !u!65 &2530287172609567641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6555481495597833590}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 1, z: 9}
+  m_Center: {x: 0.5, y: 0, z: 0}
+--- !u!65 &796262624133188636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6555481495597833590}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 1, z: 15}
+  m_Center: {x: 0.5, y: 0, z: 0}
 --- !u!1 &6777120961135067405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,7 +3952,7 @@ GameObject:
   - component: {fileID: 1939873064924544761}
   - component: {fileID: 3845507330295128463}
   m_Layer: 0
-  m_Name: Cube (11)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3858,9 +4005,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7054443004105647805}
   - component: {fileID: 4496801494342777110}
-  - component: {fileID: 2116586593760996434}
   m_Layer: 0
-  m_Name: Cube (04)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3903,18 +4049,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2116586593760996434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7035636059347676710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 625ecc59c1d0434f92204c2664d04fd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomEnter
 --- !u!1 &7057480287635848515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,7 +4060,7 @@ GameObject:
   - component: {fileID: 6288086289434541347}
   - component: {fileID: 8539374947248172787}
   m_Layer: 0
-  m_Name: Cube (14)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3980,7 +4114,7 @@ GameObject:
   - component: {fileID: 8882171371217209241}
   - component: {fileID: 6628762886458523551}
   m_Layer: 0
-  m_Name: Cube (28)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4394,7 +4528,7 @@ GameObject:
   - component: {fileID: 6198707597971253975}
   - component: {fileID: 3142147463253801266}
   m_Layer: 0
-  m_Name: Cube (21)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4627,8 +4761,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4352930095335601351}
   - component: {fileID: 7357969002410513338}
+  - component: {fileID: 8960984106295286309}
   m_Layer: 0
-  m_Name: Cube (15)_Logic
+  m_Name: Tile Enter
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4671,6 +4806,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8960984106295286309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610370258581724765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625ecc59c1d0434f92204c2664d04fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomEnter
 --- !u!1 &8742635414593332515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4682,7 +4829,7 @@ GameObject:
   - component: {fileID: 3398055438940024864}
   - component: {fileID: 6643905327331786473}
   m_Layer: 0
-  m_Name: Cube (19)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

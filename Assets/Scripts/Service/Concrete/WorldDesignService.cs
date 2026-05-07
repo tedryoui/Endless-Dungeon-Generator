@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Extension;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Attributes;
@@ -65,7 +66,7 @@ namespace Service.Concrete
             CreateRoom(structure, node, (v) =>
             {
                 AlignRoom(node.Value, parentNode.Value);
-                ConnectRoom(node.Value, parentNode.Value);
+                ConnectRoom(node, node.Value, parentNode.Value);
             });
         }
 
@@ -102,7 +103,7 @@ namespace Service.Concrete
 
         private async void AlignRoom(RoomStructure childStructure, RoomStructure parentStructure)
         {
-            var worldGrid      = Grid.Create(new float3(1.0f), Grid.GridMode.World);
+            var worldGrid      = Grid.Default;
             var exitIndex      = childStructure.ParentExitIndex;
             var exitDirection  = parentStructure.Room.Info.ExitDirections[exitIndex];
             var enterDirection = childStructure.Room.Info.EnterDirection;
@@ -120,7 +121,7 @@ namespace Service.Concrete
 
             childStructure.Room.UpdateData();
             
-            var exitGridIndex          = parentStructure.Room.Info.Exits[exitIndex] + (int3)parentStructure.Room.Bounds.Center;
+            var exitGridIndex          = parentStructure.Room.Info.Exits[exitIndex];
             var exitGridWorldPosition  = worldGrid.ToWorld(exitGridIndex);
             var enterGridIndexPosition = childStructure.Room.Info.Enter;
             var enterGridWorldPosition = worldGrid.ToWorld(enterGridIndexPosition);
@@ -156,7 +157,7 @@ Translate: [{translateVector.x},  {translateVector.y}, {translateVector.z}]");
                 PushRoom(childStructure);
         }
 
-        private async void PushRoom(RoomStructure childStructure)
+        private void PushRoom(RoomStructure childStructure)
         {
             var iterator = 0;
             
@@ -170,9 +171,10 @@ Translate: [{translateVector.x},  {translateVector.y}, {translateVector.z}]");
 
                 foreach (var other in obstacles)
                 {
-                    var roomCenter = childStructure.Room.transform.position +
-                                     childStructure.Room.transform.GetSceneCenter();
-                    var otherCenter      = other.transform.position + other.transform.GetSceneCenter();
+                    var otherRoom = other.gameObject.GetComponent<Room>();
+                    
+                    var roomCenter       = childStructure.Room.transform.position;
+                    var otherCenter      = otherRoom.transform.position;
                     var toOtherDirection = roomCenter - otherCenter;
                     
                     pushDirection += (float3)toOtherDirection;
@@ -188,9 +190,90 @@ Translate: [{translateVector.x},  {translateVector.y}, {translateVector.z}]");
             }
         }
 
-        private void ConnectRoom(RoomStructure nodeValue, RoomStructure parentNodeValue)
+        private void ConnectRoom(TreeNode<RoomStructure> node, RoomStructure nodeValue, RoomStructure parentNodeValue)
         {
+            nodeValue.Room.UpdateData();
+            parentNodeValue.Room.UpdateData();
             
+            var exitDirection = parentNodeValue.Room.Info.ExitDirections[nodeValue.ParentExitIndex];
+            var translateVector = new int2(
+                x: exitDirection switch
+                {
+                    Room.RoomInfo.Direction.Left  => -2,
+                    Room.RoomInfo.Direction.Right => 2,
+                    _                             => 0
+                },
+                y: exitDirection switch
+                {
+                    Room.RoomInfo.Direction.Forward  => 2,
+                    Room.RoomInfo.Direction.Backward => -2,
+                    _                                => 0
+                }
+            );
+
+            var enterDirection = nodeValue.Room.Info.EnterDirection;
+            var otherTranslateVector = new int2(
+                x: enterDirection switch
+                {
+                    Room.RoomInfo.Direction.Left  => -2,
+                    Room.RoomInfo.Direction.Right => 2,
+                    _                             => 0
+                },
+                y: enterDirection switch
+                {
+                    Room.RoomInfo.Direction.Forward  => 2,
+                    Room.RoomInfo.Direction.Backward => -2,
+                    _                                => 0
+                }
+            );
+            
+            var  exitIndex = nodeValue.ParentExitIndex;
+            int2 start     = parentNodeValue.Room.Info.Exits[exitIndex].xz + translateVector;
+            int2 end       = nodeValue.Room.Info.Enter.xz + otherTranslateVector;
+
+            AStarPathfinding pathfinding = new AStarPathfinding(start, end, 50, 10, (x,y,z) => GetNeighbors(x,y,z, nodeValue, parentNodeValue));
+            var              path    = pathfinding.FindPath().Select(x => new int3(x.x, 0, x.y)).ToList();
+            
+            var tunnelGameObject = new GameObject($"Tunnel [{nodeValue.Identity}, {parentNodeValue.Identity}]");
+            var tunnel           = tunnelGameObject.AddComponent<Tunnel>();
+            
+            tunnelGameObject.transform.parent = _worldRoot;
+            
+            path.Insert(0, parentNodeValue.Room.Info.Exits[exitIndex]);
+            path.Insert(0, parentNodeValue.Room.Info.Exits[exitIndex] + new int3(translateVector.x, 0, translateVector.y) / 2);
+            path.Add(nodeValue.Room.Info.Enter);
+            path.Add(nodeValue.Room.Info.Enter + new int3(otherTranslateVector.x, 0, otherTranslateVector.y) / 2);
+            
+            var roomTunnel =
+                new RoomStructure.RoomTunnel(parentNodeValue.Room.Info.Exits[exitIndex], nodeValue.Room.Info.Enter, path.ToArray(), tunnel);
+            
+            node.Value = nodeValue.AssignTunnel(roomTunnel);
+            
+            tunnel.Build(roomTunnel);
+        }
+
+        private string RoomTag => UnityGameObjectTagFabric.Get(UnityGameObjectTagEnum.Room);
+
+        private void GetNeighbors(int2 center, int radius, Dictionary<int2, bool> cache, RoomStructure child, RoomStructure parent)
+        {
+            for (int x = -radius; x <= radius; x++)
+            {
+                for (int y = -radius; y <= radius; y++)
+                {
+                    int2 point = center + new int2(x, y);
+            
+                    if (cache.ContainsKey(point)) continue;
+
+                    var colliders = Physics.OverlapBox(new float3(point.x, 0, point.y), Vector3.one / 2.0f, Quaternion.identity,
+                        LayerMask.GetMask("Default"),
+                        QueryTriggerInteraction.Collide);
+
+                    bool isWalkable = colliders.Count(other => other.gameObject.CompareTag(RoomTag) &&
+                                                               other.gameObject.GetComponent<Room>().BoundsCollider == other) == 0;
+            
+                    cache[point] = isWalkable;
+                }
+            }
         }
     }
 }

@@ -225,8 +225,20 @@ MonoBehaviour:
   _designSet: {fileID: 11400000, guid: 74ee5ccd653e011469810b1ac8ad5d41, type: 2}
   _root:
     Value:
+      _parentNodeIndex: 0
       _nodeIndex: 0
-      _connectorIndex: 0
+      _tunnel:
+        _exitGridIndex:
+          x: 0
+          y: 0
+          z: 0
+        _enterGridIndex:
+          x: 0
+          y: 0
+          z: 0
+        _pathGridIndices: []
+        _tunnel: {fileID: 0}
+      _parentExitIndex: 0
       _identity: 
       _type: 0
     _children: []

@@ -7,23 +7,20 @@ namespace Core.Scripts.Helpers
 {
     public enum UnityGameObjectTagEnum
     {
-        Tile
+        Tile,
+        Room
     }
 
     public static class UnityGameObjectTagFabric
     {
         public static string Get(UnityGameObjectTagEnum tag)
         {
-            string stringInterpolation = "";
-            
-            switch (tag)
+            string stringInterpolation = tag switch
             {
-                case UnityGameObjectTagEnum.Tile:
-                    stringInterpolation = "Tile";
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(tag), tag, null);
-            }
+                UnityGameObjectTagEnum.Tile => "Tile",
+                UnityGameObjectTagEnum.Room => "Room",
+                _                           => string.Empty
+            };
             
 #if UNITY_EDITOR
             if (!InternalEditorUtility.tags.Contains(stringInterpolation))

@@ -19,16 +19,16 @@ namespace Mechanics.World_Designer.Editor
             InspectorElement.FillDefaultInspector(container, serializedObject, this);
 
             AddSchemeButton(container);
-            
-            container.TrackSerializedObjectValue(serializedObject, o =>
-            {
-                if (target is Room room)
-                {
-                    room.UpdateData();
-                    serializedObject.ApplyModifiedProperties();
-                    EditorUtility.SetDirty(target);
-                }
-            });
+
+            // container.schedule.Execute(() =>
+            // {
+            //     if (target is Room room)
+            //     {
+            //         room.UpdateData();
+            //         serializedObject.ApplyModifiedProperties();
+            //         EditorUtility.SetDirty(target);
+            //     }
+            // }).Every(250);
             
             return container;
         }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6376479494421777339}
   - component: {fileID: 767989731599264285}
   m_Layer: 0
-  m_Name: Cube (26)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 39576113875489580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -2}
+  m_LocalPosition: {x: 1, y: 0.5, z: -2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 586149241167556059}
   - component: {fileID: 6760391221215097506}
   m_Layer: 0
-  m_Name: Cube (24)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ Transform:
   m_GameObject: {fileID: 232182399226172651}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0.5, z: -2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 3140579704679440084}
   - component: {fileID: 2417045417275567299}
   m_Layer: 0
-  m_Name: Cube (28)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 1230822013833411710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: -2}
+  m_LocalPosition: {x: -2, y: 0.5, z: -2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 8041558124423177661}
   - component: {fileID: 4917269479228786396}
   m_Layer: 0
-  m_Name: Cube (23)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,7 +368,7 @@ Transform:
   m_GameObject: {fileID: 1461638122587066944}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 2}
+  m_LocalPosition: {x: -3, y: 0.5, z: 2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 4796053388678687439}
   - component: {fileID: 5770049969868877781}
   m_Layer: 0
-  m_Name: Cube (9)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -602,7 +602,7 @@ Transform:
   m_GameObject: {fileID: 1785271673529685051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 1}
+  m_LocalPosition: {x: 2, y: 0.5, z: 1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 7787153537236417063}
   - component: {fileID: 8381496613863840946}
   m_Layer: 0
-  m_Name: Cube (18)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,7 +836,7 @@ Transform:
   m_GameObject: {fileID: 2145113212396018847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0.5, z: 2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 2987345432316637063}
   - component: {fileID: 7594985168704759170}
   m_Layer: 0
-  m_Name: Cube (6)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -980,7 +980,7 @@ Transform:
   m_GameObject: {fileID: 2217091433409124124}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 8782244833898209806}
   - component: {fileID: 2878096197579158609}
   m_Layer: 0
-  m_Name: Cube (2)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1034,7 @@ Transform:
   m_GameObject: {fileID: 2376803020077872735}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0.5, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1432,8 +1432,9 @@ GameObject:
   m_Component:
   - component: {fileID: 208887435195024256}
   - component: {fileID: 9127844822372227689}
+  - component: {fileID: 6600057067235166568}
   m_Layer: 0
-  m_Name: Cube (3)_Logic
+  m_Name: Tile Exit
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1448,7 +1449,7 @@ Transform:
   m_GameObject: {fileID: 3577683157254922556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0.5, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1476,6 +1477,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6600057067235166568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3577683157254922556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
+  Start: {fileID: 0}
+  Closed: {fileID: 0}
+  Open: {fileID: 0}
 --- !u!1 &3754053181302703758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,7 +1593,7 @@ GameObject:
   - component: {fileID: 3586892490514623002}
   - component: {fileID: 9073629929607319004}
   m_Layer: 0
-  m_Name: Cube (16)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1592,7 +1608,7 @@ Transform:
   m_GameObject: {fileID: 3918258450806986921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: -1}
+  m_LocalPosition: {x: -2, y: 0.5, z: -1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1632,7 +1648,7 @@ GameObject:
   - component: {fileID: 2516452971910449480}
   - component: {fileID: 1135640673801461205}
   m_Layer: 0
-  m_Name: Cube (5)_Logic
+  m_Name: Tile Enter
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1647,7 +1663,7 @@ Transform:
   m_GameObject: {fileID: 4108512987904227713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0.5, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1967,9 +1983,8 @@ GameObject:
   m_Component:
   - component: {fileID: 796568261414363149}
   - component: {fileID: 1549618554488817443}
-  - component: {fileID: 1761833208668067408}
   m_Layer: 0
-  m_Name: Cube (22)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1984,7 +1999,7 @@ Transform:
   m_GameObject: {fileID: 4740607964080952522}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 2}
+  m_LocalPosition: {x: -2, y: 0.5, z: 2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2012,18 +2027,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1761833208668067408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740607964080952522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
 --- !u!1 &4810154841774915933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,7 +2218,7 @@ GameObject:
   - component: {fileID: 2336728530805030352}
   - component: {fileID: 8594136306214573242}
   m_Layer: 0
-  m_Name: Cube_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2230,7 +2233,7 @@ Transform:
   m_GameObject: {fileID: 5254597917169338083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2359,7 +2362,7 @@ GameObject:
   - component: {fileID: 3972648843611062044}
   - component: {fileID: 2008320391483088430}
   m_Layer: 0
-  m_Name: Cube (21)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2374,7 +2377,7 @@ Transform:
   m_GameObject: {fileID: 5418568964725405708}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 2}
+  m_LocalPosition: {x: 2, y: 0.5, z: 2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2413,7 +2416,7 @@ GameObject:
   - component: {fileID: 2297551627019675957}
   - component: {fileID: 7856795006673174670}
   m_Layer: 0
-  m_Name: Cube (11)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2428,7 +2431,7 @@ Transform:
   m_GameObject: {fileID: 5458472782686362940}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 1}
+  m_LocalPosition: {x: -3, y: 0.5, z: 1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2647,7 +2650,7 @@ GameObject:
   - component: {fileID: 51780402544468859}
   - component: {fileID: 5532011453434761534}
   m_Layer: 0
-  m_Name: Cube (8)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2662,7 +2665,7 @@ Transform:
   m_GameObject: {fileID: 5867589236726728227}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 1}
+  m_LocalPosition: {x: 1, y: 0.5, z: 1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2701,7 +2704,7 @@ GameObject:
   - component: {fileID: 1598248383361701418}
   - component: {fileID: 3995869751104135104}
   m_Layer: 0
-  m_Name: Cube (27)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2716,7 +2719,7 @@ Transform:
   m_GameObject: {fileID: 6009698813780610325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: -2}
+  m_LocalPosition: {x: 2, y: 0.5, z: -2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3024,9 +3027,9 @@ GameObject:
   m_Component:
   - component: {fileID: 659689207865286311}
   - component: {fileID: 7823503876011679130}
-  - component: {fileID: 790324316167915583}
+  - component: {fileID: 4649676981745847998}
   m_Layer: 0
-  m_Name: Cube (25)_Logic
+  m_Name: Tile Exit
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3041,7 +3044,7 @@ Transform:
   m_GameObject: {fileID: 6312762055317084379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: -2}
+  m_LocalPosition: {x: -1, y: 0.5, z: -2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3069,7 +3072,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &790324316167915583
+--- !u!114 &4649676981745847998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3081,6 +3084,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
+  Start: {fileID: 0}
+  Closed: {fileID: 0}
+  Open: {fileID: 0}
 --- !u!1 &6370319836229778159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3092,7 +3098,7 @@ GameObject:
   - component: {fileID: 2379343749815473015}
   - component: {fileID: 6426063177731989857}
   m_Layer: 0
-  m_Name: Cube (14)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3107,7 +3113,7 @@ Transform:
   m_GameObject: {fileID: 6370319836229778159}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -1}
+  m_LocalPosition: {x: 1, y: 0.5, z: -1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3235,8 +3241,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7146009495143009874}
   - component: {fileID: 4297582754616319699}
+  - component: {fileID: 726044647948569609}
   m_Layer: 0
-  m_Name: Cube (19)_Logic
+  m_Name: Tile Exit
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3251,7 +3258,7 @@ Transform:
   m_GameObject: {fileID: 6581433114385431346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 2}
+  m_LocalPosition: {x: -1, y: 0.5, z: 2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3279,6 +3286,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &726044647948569609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581433114385431346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
+  Start: {fileID: 0}
+  Closed: {fileID: 0}
+  Open: {fileID: 0}
 --- !u!1 &6694488781848771924
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,9 +3311,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3802970881307756494}
   - component: {fileID: 8599561986715848691}
-  - component: {fileID: 5911704860549732039}
   m_Layer: 0
-  m_Name: Cube (20)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3306,7 +3327,7 @@ Transform:
   m_GameObject: {fileID: 6694488781848771924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 2}
+  m_LocalPosition: {x: 1, y: 0.5, z: 2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3334,18 +3355,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5911704860549732039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6694488781848771924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
 --- !u!1 &6698273284244128595
 GameObject:
   m_ObjectHideFlags: 0
@@ -3356,9 +3365,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7578061313448252266}
   - component: {fileID: 3915742095449557490}
-  - component: {fileID: 8221624804533264767}
   m_Layer: 0
-  m_Name: Cube (15)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3373,7 +3381,7 @@ Transform:
   m_GameObject: {fileID: 6698273284244128595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: -1}
+  m_LocalPosition: {x: 2, y: 0.5, z: -1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3401,18 +3409,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8221624804533264767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6698273284244128595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5096a192cc54435fa392e408b6d941c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomExit
 --- !u!1 &6716206497823244797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3603,6 +3599,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5796702042544356644}
   - component: {fileID: 8945254297493908488}
+  - component: {fileID: 4109536844715246770}
+  - component: {fileID: 3674728115795586931}
   m_Layer: 0
   m_Name: Entrance Room 1
   m_TagString: Room
@@ -3618,7 +3616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6802127758103133321}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.000000029802322, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3667,49 +3665,176 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eecc717fa3146e28259bf75413f50e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.Room
-  _areaCollider: {fileID: 0}
+  _boundsCollider: {fileID: 4109536844715246770}
+  _areaCollider: {fileID: 3674728115795586931}
   _roomBounds:
-    Center:
-      x: 0
+    CenterIndex:
+      x: -1
       y: 0
-      z: 0
-    SceneCenter:
-      x: -0.5
-      y: 0
-      z: 0
+      z: -1
     Width: 6
     Height: 1
     Depth: 5
     Min:
-      x: -3
+      x: -4
       y: 0
-      z: -2
+      z: -3
     Max:
-      x: 2
+      x: 1
       y: 0
-      z: 2
+      z: 1
   _roomInfo:
     HasEnter: 1
-    ExitCount: 4
+    ExitCount: 3
     Enter:
-      x: -3
+      x: -4
       y: 0
-      z: 0
+      z: -1
     EnterDirection: 2
     Exits:
+    - x: -2
+      y: 0
+      z: 1
+    - x: -2
+      y: 0
+      z: -3
+    - x: 1
+      y: 0
+      z: -1
+    ExitDirections: 000000000100000003000000
+    Tiles:
+    - x: -1
+      y: 0
+      z: -1
+    - x: -1
+      y: 0
+      z: 0
     - x: -1
       y: 0
       z: -2
-    - x: 1
+    - x: -1
       y: 0
-      z: 2
-    - x: 2
+      z: 1
+    - x: -1
+      y: 0
+      z: -3
+    - x: -2
       y: 0
       z: -1
     - x: -2
       y: 0
-      z: 2
-    ExitDirections: 01000000000000000300000000000000
+      z: 0
+    - x: -2
+      y: 0
+      z: -2
+    - x: -2
+      y: 0
+      z: 1
+    - x: -2
+      y: 0
+      z: -3
+    - x: 0
+      y: 0
+      z: -1
+    - x: 0
+      y: 0
+      z: 0
+    - x: 0
+      y: 0
+      z: -2
+    - x: 0
+      y: 0
+      z: 1
+    - x: 0
+      y: 0
+      z: -3
+    - x: 1
+      y: 0
+      z: -1
+    - x: 1
+      y: 0
+      z: 0
+    - x: 1
+      y: 0
+      z: -2
+    - x: 1
+      y: 0
+      z: 1
+    - x: 1
+      y: 0
+      z: -3
+    - x: -3
+      y: 0
+      z: -1
+    - x: -3
+      y: 0
+      z: 0
+    - x: -3
+      y: 0
+      z: -2
+    - x: -3
+      y: 0
+      z: 1
+    - x: -3
+      y: 0
+      z: -3
+    - x: -4
+      y: 0
+      z: -1
+    - x: -4
+      y: 0
+      z: 0
+    - x: -4
+      y: 0
+      z: -2
+    - x: -4
+      y: 0
+      z: 1
+    - x: -4
+      y: 0
+      z: -3
+--- !u!65 &4109536844715246770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802127758103133321}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 1, z: 5}
+  m_Center: {x: -0.5, y: 0.5, z: 0.00000023841858}
+--- !u!65 &3674728115795586931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802127758103133321}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 1, z: 11}
+  m_Center: {x: -0.5, y: 0.5, z: 0.00000023841858}
 --- !u!1 &6846169775937275155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,7 +3846,7 @@ GameObject:
   - component: {fileID: 2417937018986422446}
   - component: {fileID: 4423756186646340914}
   m_Layer: 0
-  m_Name: Cube (12)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3736,7 +3861,7 @@ Transform:
   m_GameObject: {fileID: 6846169775937275155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0.5, z: -1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3775,7 +3900,7 @@ GameObject:
   - component: {fileID: 5839572582678678616}
   - component: {fileID: 5616058031826443532}
   m_Layer: 0
-  m_Name: Cube (13)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3790,7 +3915,7 @@ Transform:
   m_GameObject: {fileID: 6913200240860041220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: -1}
+  m_LocalPosition: {x: -1, y: 0.5, z: -1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3919,7 +4044,7 @@ GameObject:
   - component: {fileID: 3353463185297248367}
   - component: {fileID: 8839533286704233433}
   m_Layer: 0
-  m_Name: Cube (7)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3934,7 +4059,7 @@ Transform:
   m_GameObject: {fileID: 7601695834990411675}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 1}
+  m_LocalPosition: {x: -1, y: 0.5, z: 1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4153,7 +4278,7 @@ GameObject:
   - component: {fileID: 8112416241569583045}
   - component: {fileID: 5426656727238915599}
   m_Layer: 0
-  m_Name: Cube (1)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4168,7 +4293,7 @@ Transform:
   m_GameObject: {fileID: 8707113972686081586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 0.5, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4297,7 +4422,7 @@ GameObject:
   - component: {fileID: 8605252127992065184}
   - component: {fileID: 1335024525558410153}
   m_Layer: 0
-  m_Name: Cube (29)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4312,7 +4437,7 @@ Transform:
   m_GameObject: {fileID: 8909627344638645145}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: -2}
+  m_LocalPosition: {x: -3, y: 0.5, z: -2}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4351,7 +4476,7 @@ GameObject:
   - component: {fileID: 6084946379402113903}
   - component: {fileID: 8048314724914488079}
   m_Layer: 0
-  m_Name: Cube (4)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4366,7 +4491,7 @@ Transform:
   m_GameObject: {fileID: 9039260604759724706}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0.5, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4405,7 +4530,7 @@ GameObject:
   - component: {fileID: 8539547500429208155}
   - component: {fileID: 8523329606963557624}
   m_Layer: 0
-  m_Name: Cube (17)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4420,7 +4545,7 @@ Transform:
   m_GameObject: {fileID: 9142377577345419359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: -1}
+  m_LocalPosition: {x: -3, y: 0.5, z: -1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4459,7 +4584,7 @@ GameObject:
   - component: {fileID: 8703657431125660892}
   - component: {fileID: 1488432869369936471}
   m_Layer: 0
-  m_Name: Cube (10)_Logic
+  m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4474,7 +4599,7 @@ Transform:
   m_GameObject: {fileID: 9167068181485938675}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 1}
+  m_LocalPosition: {x: -2, y: 0.5, z: 1}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:

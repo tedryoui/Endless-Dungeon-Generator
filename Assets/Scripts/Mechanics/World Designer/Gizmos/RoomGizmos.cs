@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using Attributes;
+using Extensions;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
@@ -20,29 +22,15 @@ namespace Mechanics.World_Designer.Gizmos
         {
             DrawWireBounds();
             DrawTileBounds();
-            DrawZeroTile();
             DrawEnterTile();
             DrawExitTiles();
             DrawAreaTiles();
         }
 
-        private void DrawZeroTile()
-        {
-            var roomBounds = _room.Bounds;
-            var center     = roomBounds.Center;
-            var grid       = _room.BuildGrid;
-            var zero = grid.ToWorld(new int3(0, 0, 0));
-
-            UnityEngine.Gizmos.color = Color.darkGray;
-            UnityEngine.Gizmos.DrawCube(zero, Vector3.one * 0.55f);
-        }
-
         private void DrawEnterTile()
         {
-            var roomBounds = _room.Bounds;
             var roomInfo   = _room.Info;
-            var center     = roomBounds.Center;
-            var grid       = _room.BuildGrid;
+            var grid       = Grid.Default;
             var enter      = roomInfo.Enter;
             var enterWorld = grid.ToWorld(enter);
 
@@ -54,8 +42,7 @@ namespace Mechanics.World_Designer.Gizmos
         {
             var roomBounds = _room.Bounds;
             var roomInfo   = _room.Info;
-            var center     = roomBounds.Center;
-            var grid       = _room.BuildGrid;
+            var grid       = Grid.Default;
             var exits      =  roomInfo.Exits;
 
             foreach (var exit in exits)
@@ -69,33 +56,50 @@ namespace Mechanics.World_Designer.Gizmos
 
         private void DrawWireBounds()
         {
-            var roomBounds  = _room.Bounds;
-            var sceneCenter = roomBounds.SceneCenter;
-            var size        = new Vector3(roomBounds.Width, 1.0f, roomBounds.Depth);
+            var roomBounds   = _room.Bounds;
+            var grid         =  Grid.Default;
+            var centerTile   = roomBounds.CenterIndex;
+            var boundsCenter = _room.transform.GetSceneCenter();
+            var size         = new Vector3(roomBounds.Width, 1.0f, roomBounds.Depth);
+
+            UnityEngine.Gizmos.color = Color.gray2;
+            UnityEngine.Gizmos.DrawSphere(grid.ToWorld(centerTile), 0.25f);
             
             UnityEngine.Gizmos.color = Color.black;
-            UnityEngine.Gizmos.DrawWireCube(sceneCenter, size);
+            UnityEngine.Gizmos.DrawSphere(boundsCenter, 0.125f);
+            
+            UnityEngine.Gizmos.color = Color.black;
+            UnityEngine.Gizmos.DrawWireCube(boundsCenter, size);
         }
 
         private void DrawTileBounds()
         {
             var roomBounds = _room.Bounds;
+            var tiles      = _room.Info.Tiles;
             var min        =  roomBounds.Min;
             var max        =  roomBounds.Max;
-            var grid       = _room.BuildGrid;
+            var grid       = Grid.Default;
 
             for (int dx = min.x; dx <= max.x; dx++)
             {
                 for (int dz = min.z; dz <= max.z; dz++)
                 {
-                    var dGridIndex = new int3(dx, 0, dz);
+                    var dGridIndex = new int3(dx, roomBounds.CenterIndex.y, dz);
                     var dWorld = grid.ToWorld(dGridIndex);
 
-                    var transparent = Color.whiteSmoke;
-                    transparent.a = 0.5f;
+                    if (tiles.Contains(dGridIndex))
+                    {
+                        UnityEngine.Gizmos.color = Color.whiteSmoke;
+                        UnityEngine.Gizmos.DrawCube(dWorld, new Vector3(1.0f, 0.45f, 1.0f));
+                    }
+                    else
+                    {
+                        var transparent = Color.whiteSmoke;
+                        transparent.a = 0.5f;
                     
-                    UnityEngine.Gizmos.color = transparent;
-                    UnityEngine.Gizmos.DrawCube(dWorld, Vector3.one * 0.45f);
+                        UnityEngine.Gizmos.color = transparent;
+                        UnityEngine.Gizmos.DrawCube(dWorld, Vector3.one * 0.45f);
+                    }
                 }
             }
         }
@@ -105,7 +109,7 @@ namespace Mechanics.World_Designer.Gizmos
             var roomBounds = _room.Bounds;
             var min        =  roomBounds.Min;
             var max        =  roomBounds.Max;
-            var grid       = _room.BuildGrid;
+            var grid       = Grid.Default;
 
             for (int dx = min.x - 3; dx <= max.x + 3; dx++)
             {
