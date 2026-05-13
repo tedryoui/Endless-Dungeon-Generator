@@ -1,0 +1,664 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42974f1ba1014bdabffe96f047f5e8e3, type: 3}
+  m_Name: Castle Entrance
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.RoomScriptableObject
+  _identity: CST_ENT_001
+  _type: 1
+  _reference:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  _tileMatrix:
+  - Identity: CST_floor
+    Point:
+      x: 0
+      y: 0
+      z: 1
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: -1
+      y: 0
+      z: 0
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: 0
+      y: 0
+      z: 0
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: -1
+      y: 0
+      z: -1
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: -1
+      y: 0
+      z: 1
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: 0
+      y: 0
+      z: -1
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: 1
+      y: 0
+      z: 1
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: 1
+      y: 0
+      z: -1
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_floor
+    Point:
+      x: 1
+      y: 0
+      z: 0
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: 0
+      y: 0
+      z: 2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: -1
+      y: 0
+      z: 2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: 1
+      y: 0
+      z: 2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: 0
+      y: 0
+      z: -2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: 1
+      y: 0
+      z: -2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: -1
+      y: 0
+      z: -2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_wall
+    Point:
+      x: -2
+      y: 0
+      z: 1
+    Rotation:
+      value:
+        x: -0
+        y: -0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_wall
+    Point:
+      x: 2
+      y: 0
+      z: -1
+    Rotation:
+      value:
+        x: -0
+        y: -0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_wall
+    Point:
+      x: -2
+      y: 0
+      z: -1
+    Rotation:
+      value:
+        x: -0
+        y: -0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_wall
+    Point:
+      x: 2
+      y: 0
+      z: 0
+    Rotation:
+      value:
+        x: -0
+        y: -0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_wall
+    Point:
+      x: -2
+      y: 0
+      z: 0
+    Rotation:
+      value:
+        x: -0
+        y: -0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_wall
+    Point:
+      x: 2
+      y: 0
+      z: 1
+    Rotation:
+      value:
+        x: -0
+        y: -0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_corner
+    Point:
+      x: -2
+      y: 0
+      z: -2
+    Rotation:
+      value:
+        x: -0
+        y: -0
+        z: -0
+        w: 1
+  - Identity: CST_corner
+    Point:
+      x: 2
+      y: 0
+      z: 2
+    Rotation:
+      value:
+        x: -0
+        y: 1
+        z: -0
+        w: 0.0000004172325
+  - Identity: CST_corner
+    Point:
+      x: -2
+      y: 0
+      z: 2
+    Rotation:
+      value:
+        x: -0
+        y: 0.70710665
+        z: -0
+        w: 0.70710695
+  - Identity: CST_corner
+    Point:
+      x: 2
+      y: 0
+      z: -2
+    Rotation:
+      value:
+        x: -0
+        y: 0.70710725
+        z: -0
+        w: -0.70710635
+  _snapshots:
+  - Identity: ENTER_OPENED
+    Operations:
+    - Type: 0
+      Tile:
+        Identity: CST_floor
+        Point:
+          x: 0
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: 1
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: -0
+            y: -0.00000035762787
+            z: -0
+            w: 1
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: -1
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: -0
+            y: -0.7071069
+            z: -0
+            w: 0.7071067
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 0
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: -1
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 1
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+  - Identity: EXIT_01_OPENED
+    Operations:
+    - Type: 0
+      Tile:
+        Identity: CST_floor
+        Point:
+          x: -2
+          y: 0
+          z: 0
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: -2
+          y: 0
+          z: -1
+        Rotation:
+          value:
+            x: -0
+            y: 1
+            z: -0
+            w: 0
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: -2
+          y: 0
+          z: 1
+        Rotation:
+          value:
+            x: -0
+            y: 0.70710695
+            z: -0
+            w: -0.70710665
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: -2
+          y: 0
+          z: 1
+        Rotation:
+          value:
+            x: -0
+            y: -0.70710665
+            z: -0
+            w: 0.70710695
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: -2
+          y: 0
+          z: 0
+        Rotation:
+          value:
+            x: -0
+            y: -0.70710665
+            z: -0
+            w: 0.70710695
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: -2
+          y: 0
+          z: -1
+        Rotation:
+          value:
+            x: -0
+            y: -0.70710665
+            z: -0
+            w: 0.70710695
+  - Identity: EXIT_02_OPENED
+    Operations:
+    - Type: 0
+      Tile:
+        Identity: CST_floor
+        Point:
+          x: 0
+          y: 0
+          z: -2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: -1
+          y: 0
+          z: -2
+        Rotation:
+          value:
+            x: -0
+            y: 1
+            z: -0
+            w: 0
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: 1
+          y: 0
+          z: -2
+        Rotation:
+          value:
+            x: -0
+            y: 0.70710665
+            z: -0
+            w: 0.70710695
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 0
+          y: 0
+          z: -2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 1
+          y: 0
+          z: -2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: -1
+          y: 0
+          z: -2
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+  - Identity: EXIT_03_OPENED
+    Operations:
+    - Type: 0
+      Tile:
+        Identity: CST_floor
+        Point:
+          x: 2
+          y: 0
+          z: 0
+        Rotation:
+          value:
+            x: -0
+            y: -0
+            z: -0
+            w: 1
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: 2
+          y: 0
+          z: 1
+        Rotation:
+          value:
+            x: -0
+            y: -0.00000053644175
+            z: -0
+            w: 1
+    - Type: 0
+      Tile:
+        Identity: CST_corner
+        Point:
+          x: 2
+          y: 0
+          z: -1
+        Rotation:
+          value:
+            x: -0
+            y: 0.7071063
+            z: -0
+            w: 0.7071073
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 2
+          y: 0
+          z: -1
+        Rotation:
+          value:
+            x: -0
+            y: -0.70710665
+            z: -0
+            w: 0.70710695
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 2
+          y: 0
+          z: 0
+        Rotation:
+          value:
+            x: -0
+            y: -0.70710665
+            z: -0
+            w: 0.70710695
+    - Type: 1
+      Tile:
+        Identity: CST_wall
+        Point:
+          x: 2
+          y: 0
+          z: 1
+        Rotation:
+          value:
+            x: -0
+            y: -0.70710665
+            z: -0
+            w: 0.70710695
+  _bounds:
+    Min:
+      x: -2
+      y: 0
+      z: -2
+    Max:
+      x: 2
+      y: 0
+      z: 2
+  _size:
+    x: 4
+    y: 0
+    z: 4
+  _enterGates: []
+  _exitGates:
+  - Point:
+      x: 0
+      y: 0
+      z: -2
+    Direction: 3
+    SnapshotIdentity: EXIT_02_OPENED
+    Pivot:
+      x: 0
+      y: 0
+      z: -1
+  - Point:
+      x: 2
+      y: 0
+      z: 0
+    Direction: 1
+    SnapshotIdentity: EXIT_03_OPENED
+    Pivot:
+      x: 1
+      y: 0
+      z: 0
+  - Point:
+      x: -2
+      y: 0
+      z: 0
+    Direction: 0
+    SnapshotIdentity: EXIT_01_OPENED
+    Pivot:
+      x: -1
+      y: 0
+      z: 0
