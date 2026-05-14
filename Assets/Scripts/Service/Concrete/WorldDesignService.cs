@@ -122,9 +122,12 @@ namespace Service.Concrete
 
                 var alignInformation = BuildAlignmentData(parentNode.Value, exitIndex, structure);
                 structure = structure.AssignAlignment(alignInformation);
-                var connectionInformation  = BuildConnectionData(parentNode.Value, structure, exitIndex);
+                var connectionInformation  = BuildConnectionData(parentNode.Value, structure, exitIndex, out var result);
                 structure = structure.AssignConnection(connectionInformation);
 
+                // if (result == false)
+                //     throw new Exception("Room can not being placed here!");
+                
                 var node = parentNode.AddChild(structure);
                 _nodeCount++;
 
@@ -298,7 +301,7 @@ namespace Service.Concrete
                 for (int z = -tunnelExtends; z <= tunnelExtends; z++)
                     neighbours.Add(new int3(x, 0, z));
 
-            var path         = nodeValue.Connection.Path.Skip(1).SkipLast(2);
+            var path         = nodeValue.Connection.Path.Skip(1).SkipLast(1);
             var pathExtended = path.SelectMany(x => neighbours.Select(y => y + x)).Distinct().ToList();
             var pathTypes    = new Dictionary<int3, TileType>();
 
@@ -323,6 +326,15 @@ namespace Service.Concrete
                     if (!_worldOutput.TryGetValue(point + new int3(0, 0, 1), out TileType forwardType) || forwardType.Equals(TileType.Void))
                         type = TileType.Wall;
                     if (!_worldOutput.TryGetValue(point + new int3(0, 0, -1), out TileType backwardType) || backwardType.Equals(TileType.Void))
+                        type = TileType.Wall;
+                    
+                    if (!_worldOutput.TryGetValue(point + new int3(1, 0, 1), out TileType topRightType) || topRightType.Equals(TileType.Void))
+                        type = TileType.Wall;
+                    if (!_worldOutput.TryGetValue(point + new int3(-1, 0, -1), out TileType bottomLeftType) || bottomLeftType.Equals(TileType.Void))
+                        type = TileType.Wall;
+                    if (!_worldOutput.TryGetValue(point + new int3(-1, 0, 1), out TileType topLeftType) || topLeftType.Equals(TileType.Void))
+                        type = TileType.Wall;
+                    if (!_worldOutput.TryGetValue(point + new int3(1, 0, -1), out TileType bottomRightType) || bottomRightType.Equals(TileType.Void))
                         type = TileType.Wall;
                 }
                 
@@ -658,12 +670,13 @@ namespace Service.Concrete
                 scale: new float3(1, 1, 1));
 
             var exitPivot = parentRoomScriptableObject.ExitGates[exitIndex].Pivot;
+            var enterPivot = childRoomScriptableObject.EnterGates[0].Pivot;
             var exitPoint  = (int3)math.round(math.transform(parentTRS, parentRoomScriptableObject.ExitGates[exitIndex].Point + exitPivot));
-            var enterPoint = (int3)math.round(math.transform(childTRS, childRoomScriptableObject.EnterGates[0].Point));
+            var enterPoint = (int3)math.round(math.transform(childTRS, childRoomScriptableObject.EnterGates[0].Point + enterPivot));
             var bounds = child.GetBounds(childRoomScriptableObject, childTRS, out _);
 
             var gateOffset = AlignmentUtility.CalculateOffset(bounds, enterPoint, exitPoint);
-            var offset     = PushOffOther(child, (int)rotation, gateOffset);
+            var offset     = PushOffOther(child, (int)rotation, gateOffset, parent, (uint)exitIndex);
             
             return new RuntimeDescriptor.AlignmentData()
             {
@@ -671,14 +684,14 @@ namespace Service.Concrete
             };
         }
 
-        private int3 PushOffOther(RuntimeDescriptor runtimeDescriptor, int yRotation, int3 initialOffset)
+        private int3 PushOffOther(RuntimeDescriptor runtimeDescriptor, int yRotation, int3 initialOffset, RuntimeDescriptor parentRuntimeDescriptor, uint exitIndex)
         {
             var offset = int3.zero;
             var neighbors = new List<int3>();
 
-            for (int x = -8; x <= 8; x++)
+            for (int x = -2; x <= 2; x++)
             {
-                for (int z = -8; z <= 8; z++)
+                for (int z = -2; z <= 2; z++)
                 {
                     if (x == 0 && z == 0) continue;
                     
@@ -688,18 +701,41 @@ namespace Service.Concrete
             
             var trs = float4x4.TRS(initialOffset, quaternion.Euler(0.0f, math.radians(yRotation), 0.0f), new float3(1, 1, 1));
             var scriptableObject = designerProjectPreferences.Rooms.First(x => x.Identity.Equals(runtimeDescriptor.Identity));
+            var parentScriptableObject = designerProjectPreferences.Rooms.First(x => x.Identity.Equals(parentRuntimeDescriptor.Identity));
             var bounds = runtimeDescriptor.GetBounds(scriptableObject, trs, out _);
             var tileMatrix = scriptableObject.TileMatrix;
+            
+            int minDistance = 6;
 
+            var enterPointLocal = scriptableObject.EnterGates[0].Point + scriptableObject.EnterGates[0].Pivot;
+            var exitPointLocal = parentScriptableObject.ExitGates[(int)exitIndex].Point +  parentScriptableObject.ExitGates[(int)exitIndex].Pivot;
+            var exitPointWorld = (int3)math.round(math.transform(parentRuntimeDescriptor.TRS, exitPointLocal));
+            var exitDirection = (int3)math.round(math.transform(float4x4.RotateY(math.radians(parentRuntimeDescriptor.Alignment.Rotation)), ToInt3(parentScriptableObject.ExitGates[(int)exitIndex].Direction)));
+            
             int iteration = 0;
             
             while (true)
             {
-                if (iteration >= 100) 
+                if (iteration >= 500) 
                     throw new Exception("Too many attempts to offset room!");
                 
-                var matrix   = GetWorldMatrixPartition(bounds.Min - 10  + offset, bounds.Max + 10 + offset, out _);
+                var matrix   = GetWorldMatrixPartition(bounds.Min - 4  + offset, bounds.Max + 4 + offset, out _);
                 var push     = new float3();
+                
+                var enterPointWorld = (int3)math.round(math.transform(trs, enterPointLocal)) + offset;
+                var distance        = 0;
+                
+                if (ToDirection(exitDirection).Equals(Direction.Right))
+                    distance = enterPointWorld.x - exitPointWorld.x;
+                else if (ToDirection(exitDirection).Equals(Direction.Left))
+                    distance = exitPointWorld.x - enterPointWorld.x;
+                else if (ToDirection(exitDirection).Equals(Direction.Forward))
+                    distance = enterPointWorld.z - exitPointWorld.z;
+                else if (ToDirection(exitDirection).Equals(Direction.Backward))
+                    distance = exitPointWorld.z - enterPointWorld.z;
+                
+                Debug.Log("Distance: " +  distance);
+                if (math.abs(distance) <= minDistance) push += exitDirection * 100;
                 
                 foreach (var tileDescription in tileMatrix)
                 {
@@ -737,14 +773,15 @@ namespace Service.Concrete
                 else offset += new int3(
                     math.abs(push.x) > math.abs(push.z) ? push.x > 0 ? 1 : -1 : 0, 
                     0, 
-                    math.abs(push.z) > math.abs(push.x) ? push.z > 0 ? 1 : -1 : 0);
+                    math.abs(push.z) >= math.abs(push.x) ? push.z > 0 ? 1 : -1 : 0);
             }
         }
 
         private RuntimeDescriptor.ConnectionData BuildConnectionData(
             RuntimeDescriptor parentRuntimeDescriptor, 
             RuntimeDescriptor childRuntimeDescriptor, 
-            int               exitIndex)
+            int               exitIndex,
+            out bool result)
         {
             var connectionData = new RuntimeDescriptor.ConnectionData()
             {
@@ -798,11 +835,12 @@ namespace Service.Concrete
                     if (offsetPoint.Equals(enterPoint))
                     {
                         connectionData.Path = pathExit.ToArray();
+                        result              = true;
                         return connectionData;
                     }
                 }
 
-                pFrom = exitPoint + directionRaw;
+                pFrom = exitPoint + directionRaw * 2;
             }
             
             {
@@ -825,33 +863,54 @@ namespace Service.Concrete
                     
                     if (pathExit.Contains(offsetPoint))
                     {
+                        pathEnter.Reverse();
+                        
                         connectionData.Path = pathExit.Concat(pathEnter).ToArray();
+                        result              = true;
                         return connectionData;
                     }
                     
                     pathEnter.Add(offsetPoint);
                 }
                 
-                pTo = enterPoint + directionRaw;
+                pTo = enterPoint + directionRaw * 2;
             }
 
-            var pathfinder = new AStarPathfinding(pFrom.xz, pTo.xz, 50, 10, ScanPathNode);
-            pathPathfinder = pathfinder.FindPath().Select(x => new int3(x.x, 0, x.y)).ToList();
+            var roomMatrix = childScriptableObject.TileMatrix.Select(x =>
+            {
+                var point = (int3)math.round(math.transform(childRuntimeDescriptor.TRS, x.Key));
+
+                return point;
+            }).ToList();
+
+            var pathfinder = new AStarPathfinding(pFrom.xz, pTo.xz, 50, 10, (a, b, c) => ScanPathNode(a, b, c, roomMatrix));
+            var pathfinderResult = pathfinder.FindPath();
+
+            if (pathfinderResult == null || pathfinderResult.Count == 0)
+            {
+                result              = false;
+                connectionData.Path = pathExit.Concat(pathEnter).ToArray();
+                return connectionData;
+            }
+
+            pathEnter.Reverse();
+            pathPathfinder = pathfinderResult.Select(x => new int3(x.x, 0, x.y)).ToList();
             
             connectionData.Path = pathExit.Concat(pathPathfinder).Concat(pathEnter).ToArray();
 
+            result = true;
             return connectionData;
         }
 
-        private void ScanPathNode(int2 center, int radius, Dictionary<int2, bool> cache)
+        private void ScanPathNode(int2 center, int radius, Dictionary<int2, bool> cache, List<int3> roomMatrix)
         {
             var center3D  = new int3(center.x, 0, center.y);
             var matrix    = GetWorldMatrixPartition(center3D - radius - 6, center3D + radius + 6, out _);
             var neighbours = new List<int2>();
 
-            for (int x = -2; x <= 2; x++)
+            for (int x = -1; x <= 1; x++)
             {
-                for (int y = -2; y <= 2; y++)
+                for (int y = -1; y <= 1; y++)
                 {
                     neighbours.Add(new int2(x, y));
                 }
@@ -877,6 +936,12 @@ namespace Service.Concrete
                              cache[point] = false;
                              break;
                          } 
+                         
+                         // if (roomMatrix.Contains(neighbourPoint3D))
+                         // {
+                         //     cache[point] = false;
+                         //     break;
+                         // }
                      }
                  }
             }

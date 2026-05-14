@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.TileScriptableObject
   _identity: CST_wall
   _prefab: {fileID: 1459790382733927141, guid: 0f82089111656224ea13a2e184a0050f, type: 3}
-  _type: 1
+  _type: 2
   _outputs: 0200000003000000
