@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/User%20Interface/Gameplay%20User%20Interface/Gameplay%20User%20Interface.uss?fileID=7433441132597879392&amp;guid=962f33026ee12b147af305733c3f7106&amp;type=3#Gameplay User Interface"/>
+    <ui:VisualElement name="Content" class="content">
+        <ui:VisualElement name="MiniMap" class="content-minimap">
+            <ui:VisualElement name="Background" class="content-minimap-background"/>
+            <ui:Image source="project://database/Assets/KayKit/Packs/KayKit%20-%20Dungeon%20Remastered%20Pack%20(for%20Unity)/Demo/Demo_Floor.png?fileID=2800000&amp;guid=0baba101edf7d454a95fb5af36f2dec8&amp;type=3#Demo_Floor" name="Texture" scale-mode="ScaleToFit" class="content-minimap-texture"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -26,7 +26,7 @@ namespace Mechanics.World_Designer
         {
             get
             {
-                var grid = Create(new float3(1), Grid.GridMode.World, new float3(0.5f, 0.0f, 0.5f));
+                var grid = Create(new float3(1), Grid.GridMode.World, new float3(0.0f, 0.0f, 0.0f));
                 return grid;
             }
         }

@@ -13,7 +13,7 @@ namespace Service
             
             EventBus.Instance.Publish(new ProjectBootstrapedEvent());
             
-            EventBus.Instance.Publish(new ServicesRegistredEvent(""));
+            EventBus.Instance.Publish(new ServicesRegisteredEvent(""));
             
             EventBus.Instance.Publish(new WorldBuildedEvent(""));
         }

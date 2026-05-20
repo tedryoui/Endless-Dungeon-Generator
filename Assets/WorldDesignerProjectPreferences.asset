@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b74109e37f44408284c4e0390e89b0, type: 3}
+  m_Name: WorldDesignerProjectPreferences
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.WorldDesignerProjectPreferences
+  _roomScriptableObjects:
+  - {fileID: 11400000, guid: 8c58117a36aace14ca3a7339857108e2, type: 2}
+  - {fileID: 11400000, guid: 44c330c357173dc418b577bc93dc0c49, type: 2}
+  - {fileID: 11400000, guid: b41694814e5e6554c9de8f067e2df8ca, type: 2}
+  _tileScriptableObjects:
+  - {fileID: 11400000, guid: 2aa9960bfe0471c48ab1098b86e05741, type: 2}
+  - {fileID: 11400000, guid: f00a202b95047d4428f9c21ac9314452, type: 2}
+  - {fileID: 11400000, guid: 2d5873eae34e5674fb9461b54190182f, type: 2}
+  _tunnelScriptableObjects:
+  - {fileID: 11400000, guid: 26695fbf6c03ffb408720bd266cfba0e, type: 2}

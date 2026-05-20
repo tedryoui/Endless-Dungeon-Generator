@@ -1,4 +1,6 @@
-﻿namespace Extensions
+﻿using Unity.Mathematics;
+
+namespace Extensions
 {
     public static class FloatExtension
     {
@@ -20,7 +22,7 @@
                     result[c][r] = matrix[r][c];
                 }
             }
-
+            
             return result;
         }
     }

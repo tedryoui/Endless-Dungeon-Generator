@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace Extensions
@@ -56,6 +57,32 @@ namespace Extensions
             }
 
             return bounds.center;
+        }
+        
+        public static void Clear(this Transform transform)
+        {
+            if (transform == null || transform.childCount == 0) 
+                return;
+
+            var children = new Transform[transform.childCount];
+            for (int i = 0; i < transform.childCount; i++)
+                children[i] = transform.GetChild(i);
+
+            foreach (var child in children)
+            {
+                if (Application.isPlaying)
+                {
+                    Object.Destroy(child.gameObject);
+                }
+                else
+                {
+#if UNITY_EDITOR
+                    Undo.DestroyObjectImmediate(child.gameObject);
+#else
+                Object.DestroyImmediate(child.gameObject);
+#endif
+                }
+            }
         }
     }
 }

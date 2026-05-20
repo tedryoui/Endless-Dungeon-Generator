@@ -39,7 +39,7 @@ namespace System.Collections.Extension
         public bool IsLeaf => _children.Count == 0;
         public int  Level  => IsRoot ? 0 : Parent.Level + 1;
 
-        public IEnumerator<TreeNode<T>> GetEnumerator() => _children.GetEnumerator();
+        public IEnumerator<TreeNode<T>> GetEnumerator() => new[] {this}.Concat(_children.SelectMany(x => x.Flatten())).GetEnumerator();
         IEnumerator IEnumerable.        GetEnumerator() => GetEnumerator();
 
         public IEnumerable<TreeNode<T>> Flatten()

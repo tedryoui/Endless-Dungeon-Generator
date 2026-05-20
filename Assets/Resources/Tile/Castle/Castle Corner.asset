@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 638cd655b2af4f85aa685c47e57817f7, type: 3}
+  m_Name: Castle Corner
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanics.World_Designer.TileScriptableObject
+  _identity: CST_corner
+  _prefab: {fileID: 5353743508640622600, guid: 441f857b0b1017c44a948661f3399a48, type: 3}
+  _type: 2
+  _outputs: 0000000003000000

@@ -1,0 +1,1904 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Castle Base
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 42974f1ba1014bdabffe96f047f5e8e3, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: Assembly-CSharp::Mechanics.World_Designer.RoomScriptableObject
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _identity
+    value: CST_ENT_001
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _reference.m_AssetGUID
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _reference.m_SubObjectName
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _reference.m_SubObjectType
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _reference.m_SubObjectGUID
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _reference.m_EditorAssetChanged
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.size
+    value: 25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[0].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[1].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[2].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[3].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[4].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[5].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[6].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[7].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[8].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[9].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[10].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[11].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[12].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[13].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[14].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[15].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[16].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[17].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[18].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[19].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[20].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[21].Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Rotation.value.y
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[22].Rotation.value.w
+    value: 0.0000004172325
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Rotation.value.y
+    value: 0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[23].Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Rotation.value.y
+    value: 0.70710725
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _tileMatrix.Array.data[24].Rotation.value.w
+    value: -0.70710635
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Identity
+    value: ENTER_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[0].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Rotation.value.y
+    value: -0.00000035762787
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[1].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Rotation.value.y
+    value: -0.7071069
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[2].Tile.Rotation.value.w
+    value: 0.7071067
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[3].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[4].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Point.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[0].Operations.Array.data[5].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Identity
+    value: EXIT_01_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[0].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Rotation.value.y
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[1].Tile.Rotation.value.w
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Rotation.value.y
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[2].Tile.Rotation.value.w
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[3].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[4].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[1].Operations.Array.data[5].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Identity
+    value: EXIT_02_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[0].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Rotation.value.y
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[1].Tile.Rotation.value.w
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Rotation.value.y
+    value: 0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[2].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[3].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Point.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[4].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Point.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[2].Operations.Array.data[5].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Identity
+    value: EXIT_03_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Identity
+    value: CST_floor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Rotation.value.y
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[0].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Rotation.value.y
+    value: -0.00000053644175
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[1].Tile.Rotation.value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Type
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Identity
+    value: CST_corner
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Rotation.value.y
+    value: 0.7071063
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[2].Tile.Rotation.value.w
+    value: 0.7071073
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Point.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[3].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[4].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Identity
+    value: CST_wall
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Point.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Rotation.value.x
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Rotation.value.y
+    value: -0.70710665
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Rotation.value.z
+    value: -0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _snapshots.Array.data[3].Operations.Array.data[5].Tile.Rotation.value.w
+    value: 0.70710695
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _bounds.Min.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _bounds.Min.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _bounds.Min.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _bounds.Max.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _bounds.Max.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _bounds.Max.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _size.x
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _size.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _size.z
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _enterGates.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Point.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Point.z
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Direction
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].SnapshotIdentity
+    value: EXIT_02_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Pivot.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Pivot.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[0].Pivot.z
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Point.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Direction
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].SnapshotIdentity
+    value: EXIT_03_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Pivot.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Pivot.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[1].Pivot.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Point.x
+    value: -2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Point.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Point.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Direction
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].SnapshotIdentity
+    value: EXIT_01_OPENED
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Pivot.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Pivot.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _exitGates.Array.data[2].Pivot.z
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []
